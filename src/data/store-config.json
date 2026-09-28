@@ -1,0 +1,12 @@
+{
+  "storeName": "GadgetZone Cell1",
+  "tagline": "Smartphone Original Garansi Resmi, Bisa COD Se-Indonesia",
+  "whatsappNumber": "085692849672",
+  "whatsappApiFormat": "6285692849672",
+  "codFeePercentage": 2,
+  "allowCodWithoutLandmark": false,
+  "autoDeductStockOnVerify": true,
+  "maxCodLimit": 25000000,
+  "workingHours": "10:00 - 21:00 WIB",
+  "address": "ITC Cempaka Mas, Jakarta Pusat"
+}

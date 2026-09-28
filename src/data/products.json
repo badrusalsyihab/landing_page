@@ -1,0 +1,234 @@
+[
+  {
+    "id": "1",
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "price": 22999000,
+    "originalPrice": 24999000,
+    "rating": 4.9,
+    "reviewsCount": 142,
+    "stock": 12,
+    "codSupported": true,
+    "badge": "Terlaris",
+    "badgeColor": "bg-red-500",
+    "officialGaransi": "Garansi Resmi iBox 1 Thn",
+    "specs": {
+      "ramStorage": "8GB / 256GB",
+      "chipset": "Apple A17 Pro (3nm)",
+      "camera": "48MP Main + 12MP Telephoto 5x",
+      "battery": "4422 mAh Fast Charging",
+      "screen": "6.7 inch Super Retina XDR OLED 120Hz"
+    },
+    "colors": [
+      "Titanium Alami",
+      "Titanium Biru",
+      "Titanium Hitam"
+    ],
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "2",
+    "name": "Samsung Galaxy S24 Ultra 5G",
+    "brand": "Samsung",
+    "price": 19999000,
+    "originalPrice": 21999000,
+    "rating": 4.9,
+    "reviewsCount": 98,
+    "stock": 8,
+    "codSupported": true,
+    "badge": "Promo COD",
+    "badgeColor": "bg-indigo-600",
+    "officialGaransi": "Garansi Resmi SEIN",
+    "specs": {
+      "ramStorage": "12GB / 512GB",
+      "chipset": "Snapdragon 8 Gen 3 for Galaxy",
+      "battery": "5000 mAh 45W Fast Charge",
+      "camera": "200MP Quad Cam + S-Pen",
+      "screen": "6.8 inch Dynamic AMOLED 2X 120Hz"
+    },
+    "colors": [
+      "Titanium Gray",
+      "Titanium Black",
+      "Titanium Yellow"
+    ],
+    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "3",
+    "name": "Xiaomi 14 Leica Camera",
+    "brand": "Xiaomi",
+    "price": 11999000,
+    "originalPrice": 12999000,
+    "rating": 4.8,
+    "reviewsCount": 76,
+    "stock": 15,
+    "codSupported": true,
+    "badge": "Flagship",
+    "badgeColor": "bg-amber-500",
+    "officialGaransi": "Garansi Resmi TAM",
+    "specs": {
+      "ramStorage": "12GB / 256GB",
+      "chipset": "Snapdragon 8 Gen 3",
+      "battery": "4610 mAh 90W HyperCharge",
+      "camera": "50MP Leica Summilux Optics",
+      "screen": "6.36 inch LTPO OLED 120Hz"
+    },
+    "colors": [
+      "Black",
+      "White",
+      "Jade Green"
+    ],
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "4",
+    "name": "Poco F6 Pro 5G",
+    "brand": "Poco",
+    "price": 7499000,
+    "originalPrice": 7999000,
+    "rating": 4.7,
+    "reviewsCount": 112,
+    "stock": 20,
+    "codSupported": true,
+    "badge": "Gaming King",
+    "badgeColor": "bg-yellow-500 text-black",
+    "officialGaransi": "Garansi Resmi Xiaomi Indonesia",
+    "specs": {
+      "ramStorage": "12GB / 512GB",
+      "chipset": "Snapdragon 8 Gen 2",
+      "battery": "5000 mAh 120W Charge",
+      "camera": "50MP Triple Cam with OIS",
+      "screen": "6.67 inch WQHD+ AMOLED 120Hz"
+    },
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "5",
+    "name": "Infinix GT 20 Pro 5G",
+    "brand": "Infinix",
+    "price": 4399000,
+    "originalPrice": 4699000,
+    "rating": 4.7,
+    "reviewsCount": 89,
+    "stock": 25,
+    "codSupported": true,
+    "badge": "Best Value",
+    "badgeColor": "bg-emerald-600",
+    "officialGaransi": "Garansi Resmi Infinix ID",
+    "specs": {
+      "ramStorage": "12GB / 256GB",
+      "chipset": "MediaTek Dimensity 8200 Ultimate",
+      "battery": "5000 mAh 45W Fast Charge",
+      "camera": "108MP OIS Gaming Camera",
+      "screen": "6.78 inch FHD+ AMOLED 144Hz"
+    },
+    "colors": [
+      "Mecha Blue",
+      "Mecha Orange",
+      "Mecha Silver"
+    ],
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "6",
+    "name": "OPPO Reno11 5G",
+    "brand": "Oppo",
+    "price": 5999000,
+    "originalPrice": 6499000,
+    "rating": 4.8,
+    "reviewsCount": 64,
+    "stock": 10,
+    "codSupported": true,
+    "badge": "Portrait Expert",
+    "badgeColor": "bg-cyan-600",
+    "officialGaransi": "Garansi Resmi OPPO",
+    "specs": {
+      "ramStorage": "8GB / 256GB",
+      "chipset": "MediaTek Dimensity 7050",
+      "battery": "5000 mAh 67W SUPERVOOC",
+      "camera": "32MP Telephoto Portrait + 50MP Main",
+      "screen": "6.7 inch 3D Curved OLED 120Hz"
+    },
+    "colors": [
+      "Wave Green",
+      "Rock Grey"
+    ],
+    "image": "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "7",
+    "name": "Vivo V30 5G",
+    "brand": "Vivo",
+    "price": 5999000,
+    "originalPrice": 6299000,
+    "rating": 4.8,
+    "reviewsCount": 52,
+    "stock": 14,
+    "codSupported": true,
+    "badge": "Aura Light",
+    "badgeColor": "bg-indigo-500",
+    "officialGaransi": "Garansi Resmi Vivo ID",
+    "specs": {
+      "ramStorage": "12GB / 256GB",
+      "chipset": "Snapdragon 7 Gen 3",
+      "battery": "5000 mAh 80W FlashCharge",
+      "camera": "50MP AF Ultra-Wide + Aura Light",
+      "screen": "6.78 inch AMOLED 1.5K 120Hz"
+    },
+    "colors": [
+      "Hijau Khatulistiwa",
+      "Hitam Vulkanik"
+    ],
+    "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "8",
+    "name": "Realme 12 Pro+ 5G",
+    "brand": "Realme",
+    "price": 6999000,
+    "originalPrice": 7499000,
+    "rating": 4.7,
+    "reviewsCount": 43,
+    "stock": 9,
+    "codSupported": true,
+    "badge": "Periscope Zoom",
+    "badgeColor": "bg-amber-600",
+    "officialGaransi": "Garansi Resmi Realme",
+    "specs": {
+      "ramStorage": "12GB / 512GB",
+      "chipset": "Snapdragon 7s Gen 2",
+      "battery": "5000 mAh 67W SUPERVOOC",
+      "camera": "64MP Periscope Portrait + 50MP Sony IMX890",
+      "screen": "6.7 inch OLED Curved Display"
+    },
+    "colors": [
+      "Submarine Blue",
+      "Navigator Beige"
+    ],
+    "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "12123",
+    "name": "iphone new yang lipat",
+    "brand": "iphone",
+    "price": 3000000000,
+    "originalPrice": 340430,
+    "stock": 34,
+    "codSupported": true,
+    "specs": {
+      "ramStorage": "12",
+      "chipset": "fi",
+      "camera": "swews",
+      "battery": "23",
+      "screen": "sdsd"
+    },
+    "colors": [
+      "blck"
+    ],
+    "image": "https://cms.disway.id/uploads/40749a53657626464b15e43aecf97442.jpg"
+  }
+]
