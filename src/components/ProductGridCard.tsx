@@ -1,6 +1,6 @@
 "use client";
 
-import { Cpu, Eye, ShoppingCart, Star } from "lucide-react";
+import { Cpu, Eye, ShoppingCart } from "lucide-react";
 import type { Product } from "@/lib/types";
 import { formatRupiah } from "@/lib/format";
 
@@ -47,12 +47,6 @@ export default function ProductGridCard({
         <div>
           <div className="mb-1 flex items-center justify-between text-[11px] font-semibold text-gray-400">
             <span className="text-cyan-400 uppercase tracking-wider">{product.brand}</span>
-            {product.rating !== undefined && (
-              <span className="flex items-center gap-1 text-amber-400">
-                <Star className="h-2.5 w-2.5 fill-current" /> {product.rating} (
-                {product.reviewsCount})
-              </span>
-            )}
           </div>
           <h3 className="line-clamp-1 text-base font-bold text-white transition-colors group-hover:text-cyan-400">
             {product.name}
