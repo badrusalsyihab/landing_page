@@ -8,8 +8,10 @@ import DashboardLogin, { dashboardLogout, isDashboardAuthed } from "@/components
 import ProductFormModal from "@/components/ProductFormModal";
 import RulesManager from "@/components/RulesManager";
 import FaqManager from "@/components/FaqManager";
+import HighlightsManager from "@/components/HighlightsManager";
+import ShippingManager from "@/components/ShippingManager";
 
-type Tab = "config" | "products" | "rules" | "faq";
+type Tab = "config" | "products" | "rules" | "faq" | "highlights" | "shipping";
 
 export default function DashboardPage() {
   const [authed, setAuthed] = useState(() => isDashboardAuthed());
@@ -182,6 +184,26 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
             }`}
           >
             FAQ
+          </button>
+          <button
+            onClick={() => setTab("highlights")}
+            className={`px-4 py-2 text-sm font-semibold ${
+              tab === "highlights"
+                ? "border-b-2 border-black dark:border-white"
+                : "text-black/50 dark:text-white/50"
+            }`}
+          >
+            Sorotan Hero
+          </button>
+          <button
+            onClick={() => setTab("shipping")}
+            className={`px-4 py-2 text-sm font-semibold ${
+              tab === "shipping"
+                ? "border-b-2 border-black dark:border-white"
+                : "text-black/50 dark:text-white/50"
+            }`}
+          >
+            Ongkir &amp; Kota
           </button>
         </div>
 
@@ -401,6 +423,10 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
         {tab === "rules" && <RulesManager />}
 
         {tab === "faq" && <FaqManager />}
+
+        {tab === "highlights" && <HighlightsManager />}
+
+        {tab === "shipping" && <ShippingManager />}
       </div>
     </div>
   );

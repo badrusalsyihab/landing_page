@@ -32,6 +32,12 @@ export type FaqItem = {
   answer: string;
 };
 
+export type HighlightItem = {
+  id: string;
+  title: string;
+  subtitle: string;
+};
+
 export type StoreConfig = {
   storeName: string;
   tagline: string;

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Calculator, Menu, ShieldCheck, ShoppingCart, Smartphone, Truck, X } from "lucide-react";
-import type { CartItem, FaqItem, Product, StoreConfig } from "@/lib/types";
+import type { CartItem, FaqItem, HighlightItem, Product, StoreConfig } from "@/lib/types";
+import type { ShippingOption } from "@/lib/shipping";
 import { buildGeneralWhatsAppLink } from "@/lib/format";
 import WhatsAppIcon from "./WhatsAppIcon";
 import ProductCatalogSection from "./ProductCatalogSection";
@@ -26,11 +27,15 @@ export default function Storefront({
   config,
   rules,
   faqItems,
+  highlights,
+  shippingOptions,
 }: {
   products: Product[];
   config: StoreConfig;
   rules: string[];
   faqItems: FaqItem[];
+  highlights: HighlightItem[];
+  shippingOptions: ShippingOption[];
 }) {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
@@ -194,19 +199,13 @@ export default function Storefront({
                   </a>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4 border-t border-gray-800 pt-6">
-                  <div>
-                    <p className="text-xl font-black text-white sm:text-2xl">100% Original</p>
-                    <p className="text-xs text-gray-400">BNIB Resmi Indonesia</p>
-                  </div>
-                  <div>
-                    <p className="text-xl font-black text-white sm:text-2xl">Bisa COD</p>
-                    <p className="text-xs text-gray-400">Jangkauan Seluruh Kota</p>
-                  </div>
-                  <div>
-                    <p className="text-xl font-black text-white sm:text-2xl">1 Tahun</p>
-                    <p className="text-xs text-gray-400">Garansi Resmi Toko &amp; Brand</p>
-                  </div>
+                <div className="grid grid-cols-2 gap-4 border-t border-gray-800 pt-6 sm:grid-cols-3">
+                  {highlights.map((item) => (
+                    <div key={item.id}>
+                      <p className="text-xl font-black text-white sm:text-2xl">{item.title}</p>
+                      <p className="text-xs text-gray-400">{item.subtitle}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
 
@@ -268,7 +267,11 @@ export default function Storefront({
           className="border-y border-gray-800 bg-slate-900/60 py-16"
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <CodCalculatorSection products={products} config={config} />
+            <CodCalculatorSection
+              products={products}
+              config={config}
+              shippingOptions={shippingOptions}
+            />
           </div>
         </section>
 

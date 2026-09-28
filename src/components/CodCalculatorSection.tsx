@@ -3,27 +3,29 @@
 import { useMemo, useState } from "react";
 import { Calculator, CheckSquare } from "lucide-react";
 import type { Product, StoreConfig } from "@/lib/types";
+import type { ShippingOption } from "@/lib/shipping";
 import { calcCodFee, formatRupiah } from "@/lib/format";
-import { SHIPPING_OPTIONS } from "@/lib/shipping";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function CodCalculatorSection({
   products,
   config,
+  shippingOptions,
 }: {
   products: Product[];
   config: StoreConfig;
+  shippingOptions: ShippingOption[];
 }) {
   const [productId, setProductId] = useState(products[0]?.id ?? "");
-  const [shippingId, setShippingId] = useState(SHIPPING_OPTIONS[0].id);
+  const [shippingId, setShippingId] = useState(shippingOptions[0]?.id ?? "");
 
   const product = useMemo(
     () => products.find((p) => p.id === productId) ?? products[0],
     [products, productId]
   );
   const shipping = useMemo(
-    () => SHIPPING_OPTIONS.find((s) => s.id === shippingId) ?? SHIPPING_OPTIONS[0],
-    [shippingId]
+    () => shippingOptions.find((s) => s.id === shippingId) ?? shippingOptions[0],
+    [shippingOptions, shippingId]
   );
 
   const codFee = calcCodFee(product.price, config.codFeePercentage);
@@ -98,7 +100,7 @@ export default function CodCalculatorSection({
                 onChange={(e) => setShippingId(e.target.value)}
                 className="w-full rounded-xl border border-gray-700 bg-gray-900 px-4 py-3 text-sm text-white outline-none focus:border-cyan-500"
               >
-                {SHIPPING_OPTIONS.map((s) => (
+                {shippingOptions.map((s) => (
                   <option key={s.id} value={s.id}>
                     {s.label} (Ongkir: {formatRupiah(s.fee)})
                   </option>
