@@ -8,6 +8,8 @@ import {
 } from "@/lib/data";
 import Storefront from "@/components/Storefront";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const [config, products, rules, faqItems, highlights, shippingOptions] = await Promise.all([
     getStoreConfig(),
