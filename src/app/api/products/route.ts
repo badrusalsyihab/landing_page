@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getProducts, saveProducts } from "@/lib/data";
+import { getProducts, createProduct } from "@/lib/data";
 import type { Product } from "@/lib/types";
 
 export async function GET() {
@@ -18,7 +18,6 @@ export async function POST(request: Request) {
     );
   }
 
-  products.push(newProduct);
-  await saveProducts(products);
-  return NextResponse.json(newProduct, { status: 201 });
+  const created = await createProduct(newProduct);
+  return NextResponse.json(created, { status: 201 });
 }
